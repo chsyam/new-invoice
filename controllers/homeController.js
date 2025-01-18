@@ -45,11 +45,6 @@ const generatePdf = async (req, res, next) => {
             products: obj
         },
         path: './docs/' + filename,
-        options: {
-            viewer: {
-                zoom: "100%",
-            },
-        },
     }
     pdf.create(document, options)
         .then(res => {
