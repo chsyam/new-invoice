@@ -47,7 +47,7 @@ const generatePdf = async (req, res, next) => {
         path: './docs/' + filename,
         options: {
             viewer: {
-                zoom: "100%", // or auto
+                zoom: "100%",
             },
         },
     }
