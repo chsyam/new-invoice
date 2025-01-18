@@ -1,6 +1,6 @@
 module.exports = {
-    formate: 'A3',
-    orientation: 'landscape',
+    formate: 'A4',
+    orientation: 'potrait',
     border: '2mm',
     header: {
         height: '15mm',
