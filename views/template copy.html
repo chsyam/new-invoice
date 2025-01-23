@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pdf Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    @media print {
+      body {
+        zoom: 0.55;
+      }
+    }
+
+    body {
+      height: auto;
+      margin: 10px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>&nbsp;</p>
+    <p>GreenTech Maturity Assessment</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>Analysis Report</p>
+    <p>&nbsp;</p>
+    <p>Assessment Details</p>
+    <p>Date of Assessment</p>
+    <p>27 December 2024</p>
+    <p>Project Name</p>
+    <p>Platform Engineering</p>
+    <p>Company Name</p>
+    <p>Tata Consultancy Services (TCS)</p>
+    <p>Version</p>
+    <p>1.0</p>
+    <p>Cloud Provider</p>
+    <p>AWS</p>
+    <p>&nbsp;</p>
+    <p>Current Maturity Level</p>
+    <p>&lrm; Processes are standardized, documented, well understood and reviewed.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>GreenTech Maturity Levels</p>
+    <p>Maturity Levels</p>
+    <p>Score</p>
+    <p>Description</p>
+    <p>Level 1</p>
+    <p>1</p>
+    <p>Processes are unpredictable, poorly controlled, and reactive at best.</p>
+    <p>Level 2</p>
+    <p>2</p>
+    <p>Per-project processes. Often still reactive.</p>
+    <p>Level 3</p>
+    <p>3</p>
+    <p>Processes are standardized, documented, well understood and reviewed.</p>
+    <p>Level 4</p>
+    <p>4</p>
+    <p>Processes are measured and controlled.</p>
+    <p>Level 5</p>
+    <p>5</p>
+    <p>Continuous improvement occurs based on quantitative feedback.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>Areas Implemented</p>
+    <p>Phases</p>
+    <p>Count</p>
+    <p>Development</p>
+    <p>4 of 24</p>
+    <p>Network</p>
+    <p>1 of 2</p>
+    <p>Deployment</p>
+    <p>7 of 19</p>
+    <p>Design</p>
+    <p>0 of 31</p>
+    <p>Storage</p>
+    <p>0 of 5</p>
+    <p>Quality</p>
+    <p>0 of 8</p>
+    <p>Operations</p>
+    <p>0 of 12</p>
+    <p>&nbsp;</p>
+    <p>Recommendations</p>
+    <p>Development:</p>
+    <p>Optimize source code for energy and carbon emissions using static code analysis</p>
+    <p>Issue Type</p>
+    <p>Count</p>
+    <p>Avoid usage of static collections.</p>
+    <p>87</p>
+    <p>Avoid multiple if-else statement</p>
+    <p>61</p>
+    <p>Do not call a function when declaring a for-type loop</p>
+    <p>54</p>
+    <p>Use ++i instead of i++</p>
+    <p>43</p>
+    <p>String Builder</p>
+    <p>29</p>
+    <p>Avoid getting the size of the collection in the loop</p>
+    <p>23</p>
+    <p>Avoid creating and starting threads directly</p>
+    <p>17</p>
+    <p>Avoid using Pattern.compile() in a non-static context</p>
+    <p>11</p>
+    <p>Free Resources</p>
+    <p>2</p>
+    <p>Use System.arraycopy to copy arrays</p>
+    <p>1</p>
+    <p>&nbsp;</p>
+    <p>Memory and energy utilization of docker and multi-stage docker files</p>
+    <p>Metrics</p>
+    <p>Single-Stage Docker File</p>
+    <p>Multi-Stage Docker File</p>
+    <p>Energy Usage</p>
+    <p>High</p>
+    <p>Low</p>
+    <p>Build Time</p>
+    <p>5 minutes</p>
+    <p>6 minutes</p>
+    <p>Layer Count</p>
+    <p>12 layers</p>
+    <p>8 layers</p>
+    <p>Image Size</p>
+    <p>2.06 GB</p>
+    <p>2.01 GB</p>
+    <p>Cache Efficiency</p>
+    <p>Low</p>
+    <p>High</p>
+    <p>CI/CD Impact</p>
+    <p>High resource usage</p>
+    <p>Optimized resource usage</p>
+    <p>Adopt Multi-Stage Docker Files:</p>
+    <p>Reduce memory and energy consumption during build and runtime.</p>
+    <p>Smaller image sizes lead to faster deployments and lower storage needs.</p>
+    <p>Optimize Base Images:</p>
+    <p>Use official, slim, or alpine versions of base images to minimize size.</p>
+    <p>Periodically review and update base images to leverage newer, more efficient versions.</p>
+    <p>Minimize Dependency Installation:</p>
+    <p>Only install necessary dependencies to reduce build and runtime resource usage.</p>
+    <p>Use tools like pip-compile to manage dependencies efficiently.</p>
+    <p>Leverage Caching:</p>
+    <p>Utilize Docker's build cache to skip unchanged layers during rebuilds.</p>
+    <p>Implement caching for dependencies (e.g., using a proxy server for pip dependencies).</p>
+    <p>Monitor and Analyze Resource Usage:</p>
+    <p>Employ tools (e.g., Docker Stats, Prometheus, Grafana) to monitor container resource utilization.</p>
+    <p>Analyze findings to identify optimization opportunities.</p>
+    <p>&nbsp;</p>
+    <p>Energy metrics for application using Intel RAPL, Kepler, Schaphandre</p>
+    <p>CPU Model</p>
+    <p>Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz</p>
+    <p>CPU Count</p>
+    <p>2</p>
+    <p>GPU Model</p>
+    <p>N/A</p>
+    <p>GPU Count</p>
+    <p>N/A</p>
+    <p>RAM</p>
+    <p>3.74 GB</p>
+    <p>OS</p>
+    <p>Linux</p>
+    <p>Country</p>
+    <p>United States</p>
+    <p>Region</p>
+    <p>Virginia</p>
+    <p>&nbsp;</p>
+    <p>Duration</p>
+    <p>Energy Consumed</p>
+    <p>Emissions</p>
+    <p>Emissions Rate</p>
+    <p>44.28 Seconds</p>
+    <p>0.001309 Kwh</p>
+    <p>0.000483 kg</p>
+    <p>0.00001091 kg/s</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>Monitor and Optimize: Regularly collect energy metrics to identify optimization opportunities in your
+      application.
+    </p>
+    <p>Set Sustainability Goals: Establish targets for your Sustainability Score (SS) or individual energy metrics to
+      drive
+      improvement.</p>
+    <p>Energy-Aware Scheduling: Utilize Kepler to schedule workflow tasks during periods of low energy demand or when
+      renewable energy sources are available.</p>
+    <p>Hardware/Software Co-Optimization: Collaborate with hardware teams to optimize system configurations for improved
+      energy efficiency.</p>
+    <p>Continuously Update and Refine: As new energy-efficient technologies and methodologies emerge, incorporate them
+      into
+      your application and workflows.</p>
+    <p>Energy consumption of ML job, Model training</p>
+    <p>Optimize Model Architecture:</p>
+    <p>Use efficient neural network architectures (e.g., MobileNet, SqueezeNet, EfficientNet) that require less
+      computational resources.</p>
+    <p>Apply model pruning, knowledge distillation, or quantization to reduce model size and computational requirements.
+    </p>
+    <p>Select Energy-Efficient Hardware:</p>
+    <p>Utilize GPU accelerators with high performance-per-watt ratios (e.g., NVIDIA Ampere or AMD CDNA).</p>
+    <p>Consider TPU (Tensor Processing Unit)-based solutions for large-scale ML workloads.</p>
+    <p>Explore FPGA (Field-Programmable Gate Array)-based accelerators for customized, energy-efficient computations.
+    </p>
+    <p>Efficient Training Methodologies:</p>
+    <p>Employ transfer learning to fine-tune pre-trained models, reducing training time and energy.</p>
+    <p>Use early stopping techniques to halt training when satisfactory performance is achieved.</p>
+    <p>Apply distributed training with optimized parallelization to minimize overall training time.</p>
+    <p>Data Efficiency:</p>
+    <p>Use smaller, representative datasets for training, reducing computational requirements.</p>
+    <p>Apply data augmentation to artificially increase dataset size without adding new samples.</p>
+    <p>Hyperparameter Tuning and Automation:</p>
+    <p>Utilize hyperparameter tuning tools (e.g., Hyperopt, Optuna) to quickly identify optimal configurations.</p>
+    <p>Implement automated ML (AutoML) pipelines to streamline the training process and minimize unnecessary
+      computations.
+    </p>
+    <p>&nbsp;</p>
+    <p>Network:</p>
+    <p>Energy efficiency for synchronous (REST vs gRPC) and Asynchronous (Kafka vs RabbitMQ) messaging between
+      microservices
+    </p>
+    <p>Synchronous Communication Protocols</p>
+    <p>Metrics</p>
+    <p>gRPC</p>
+    <p>Rest</p>
+    <p>Energy Usage</p>
+    <p>18.1 W</p>
+    <p>8.2 W</p>
+    <p>Peak Memory</p>
+    <p>4.45 MB</p>
+    <p>8 MB</p>
+    <p>Time Taken</p>
+    <p>3 Minutes</p>
+    <p>4 Min 50 Sec</p>
+    <p>Requests</p>
+    <p>500K</p>
+    <p>500K</p>
+    <p>Peak CPU</p>
+    <p>10%</p>
+    <p>4%</p>
+    <p>Asynchronous Communication Protocols</p>
+    <p>Metrics</p>
+    <p>Kafka</p>
+    <p>RabbitMQ</p>
+    <p>Energy Usage</p>
+    <p>19.2 W</p>
+    <p>10.68 W</p>
+    <p>Peak Memory</p>
+    <p>1024 MB</p>
+    <p>512 MB</p>
+    <p>Message Rate</p>
+    <p>1M msg/s</p>
+    <p>50K msg/s</p>
+    <p>Latency</p>
+    <p>10ms</p>
+    <p>5ms</p>
+    <p>CPU Usage</p>
+    <p>55%</p>
+    <p>35%</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>For Synchronous Messaging (REST/gRPC)</p>
+    <p>Use gRPC for New Developments:</p>
+    <p>Leverage its inherent efficiency advantages, especially for microservices with high inter-service communication.
+    </p>
+    <p>Migrate REST to HTTP/2:</p>
+    <p>If moving to gRPC isn&rsquo;t feasible, ensure REST services use HTTP/2 for some efficiency gains.</p>
+    <p>Optimize Payloads:</p>
+    <p>Use efficient serialization formats (e.g., protobuf for gRPC, consider alternatives for REST).</p>
+    <p>Implement compression (if not already done).</p>
+    <p>Service Discovery and Load Balancing:</p>
+    <p>Ensure efficient routing to reduce unnecessary network hops.</p>
+    <p>For Asynchronous Messaging (Kafka/RabbitMQ)</p>
+    <p>Choose Kafka for High-Volume Scenarios:</p>
+    <p>Prefer Kafka when dealing with high throughput and low-latency requirements.</p>
+    <p>Optimize RabbitMQ Configurations:</p>
+    <p>For existing RabbitMQ setups, review and optimize configurations for batching, compression, and efficient queue
+      management.</p>
+    <p>Leverage Distributed Capabilities:</p>
+    <p>For both Kafka and RabbitMQ, ensure distributed setups are optimized to minimize energy consumption.</p>
+    <p>Deployment:</p>
+    <p>Tagging of resources to track usage</p>
+    <p>Mandatory Tags:</p>
+    <p>Owner (e.g., team, department, individual)</p>
+    <p>Environment (e.g., dev, staging, prod)</p>
+    <p>Project/Service (e.g., project name, service identifier)</p>
+    <p>Cost Center (e.g., budget code, department ID)</p>
+    <p>Optional Tags (as needed):</p>
+    <p>Application</p>
+    <p>Component</p>
+    <p>Lifecycle (e.g., temporary, permanent)</p>
+    <p>Compliance (e.g., PCI, HIPAA)</p>
+    <p>Tagging Best Practices:</p>
+    <p>Use Meaningful Names: Clearly indicate the tag's purpose.</p>
+    <p>Keep it Concise: Short tag names (&lt; 20 characters) for easier management.</p>
+    <p>Avoid Duplication: Use a single tag for a specific attribute (e.g., don't use both Env and Environment).</p>
+    <p>Use Consistent Formatting: Establish a standard for tag values (e.g., all lowercase, separated by hyphens).</p>
+    <p>Tagging Structure (Hierarchy):</p>
+    <p>Flat Structure: Simple, straightforward (e.g., Owner: JohnDoe, Environment: Prod)</p>
+    <p>Hierarchical Structure: Organized with categories (e.g., Project:MyApp/Environment:Dev,
+      CostCenter:IT/Department:DevOps)</p>
+    <p>Instances without Tags:</p>
+    <p>Instance Name</p>
+    <p>Instance ID</p>
+    <p>Instance Type</p>
+    <p>marvel-windows-jumboxtest</p>
+    <p>i-07a7a6794367ded49</p>
+    <p>t3.medium</p>
+    <p>marvel-esha-windows-jumpbox-01</p>
+    <p>i-0378700bcf2ef68e7</p>
+    <p>t3.large</p>
+    <p>marvel-rapl-amd</p>
+    <p>i-0c43a18a046c87984</p>
+    <p>t3a.large</p>
+    <p>marvel-sustain</p>
+    <p>i-0571933e06349edd6</p>
+    <p>t2.medium</p>
+    <p>marvel-autoscaler-3</p>
+    <p>i-0c86e5cbdc6ef48e9</p>
+    <p>t2.medium</p>
+    <p>marvel-docker-registry</p>
+    <p>i-0121edc6357368099</p>
+    <p>t3.micro</p>
+    <p>marvel-git-perforce</p>
+    <p>i-0361799692abc3dc4</p>
+    <p>t2.medium</p>
+    <p>marvel-esha-windows-jumpbox-03</p>
+    <p>i-01b006bb7ceefd989</p>
+    <p>t3.large</p>
+    <p>marvel-Prometheus</p>
+    <p>i-00f4b18e0c7615802</p>
+    <p>t2.micro</p>
+    <p>marvel-slurm-testing-slurmctl</p>
+    <p>i-02028574274244586</p>
+    <p>t3a.small</p>
+    <p>marvel-slurm-testing-slurm-00</p>
+    <p>i-0c10cab3a673568a5</p>
+    <p>t3a.small</p>
+    <p>marvel-slurm-testing-gw</p>
+    <p>i-01528621d1601b22d</p>
+    <p>t3a.small</p>
+    <p>marvel-slurm-testing-slurmdb</p>
+    <p>i-04cf6faf1252ba6a7</p>
+    <p>t3a.small</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>Calculate energy utilization for provisioned resources and show recommendations to deployment teams</p>
+    <p>(Legend: R denotes Recommendation Rank)</p>
+    <p>&nbsp;</p>
+    <p>Under-Provisioned:</p>
+    <p>Instance ID</p>
+    <p>Instance Type</p>
+    <p>R 1</p>
+    <p>R 2</p>
+    <p>R 3</p>
+    <p>i-0011eee5f9bfa37d5</p>
+    <p>t3.large</p>
+    <p>m7i-flex.large</p>
+    <p>m6i.large</p>
+    <p>m7i.large</p>
+    <p>i-01e2bba24c61139a5</p>
+    <p>t3.large</p>
+    <p>m7i-flex.large</p>
+    <p>m6i.large</p>
+    <p>m7i.large</p>
+    <p>i-0378700bcf2ef68e7</p>
+    <p>t3.large</p>
+    <p>m7i-flex.large</p>
+    <p>m6i.large</p>
+    <p>m7i.large</p>
+    <p>i-061783c19995cf461</p>
+    <p>t3.large</p>
+    <p>m7i-flex.large</p>
+    <p>m6i.large</p>
+    <p>m7i.large</p>
+    <p>i-06b0d1885c8bfb73a</p>
+    <p>t2.medium</p>
+    <p>c7i-flex.large</p>
+    <p>c6i.large</p>
+    <p>c5.large</p>
+    <p>i-07d971daf49d26ba6</p>
+    <p>t3.large</p>
+    <p>m7i-flex.large</p>
+    <p>m6i.large</p>
+    <p>m7i.large</p>
+    <p>i-07fc1239a8432b1ff</p>
+    <p>t2.nano</p>
+    <p>t3.small</p>
+    <p>t3.medium</p>
+    <p>t3.large</p>
+    <p>i-0803db063f7902be8</p>
+    <p>t2.nano</p>
+    <p>t3.small</p>
+    <p>t3.medium</p>
+    <p>t3.large</p>
+    <p>i-0a30bd8f427568294</p>
+    <p>t2.large</p>
+    <p>m7i.large</p>
+    <p>r7i.large</p>
+    <p>c7i-flex.xlarge</p>
+    <p>i-0bcac5f25c482c094</p>
+    <p>t3.large</p>
+    <p>m7i-flex.large</p>
+    <p>m6i.large</p>
+    <p>m7i.large</p>
+    <p>i-0e7f58282fba77a57</p>
+    <p>t3.xlarge</p>
+    <p>m7i-flex.xlarge</p>
+    <p>m6i.xlarge</p>
+    <p>m7i.xlarge</p>
+    <p>&nbsp;</p>
+    <p>Over-Provisioned:</p>
+    <p>Instance ID</p>
+    <p>Instance Type</p>
+    <p>R 1</p>
+    <p>R 2</p>
+    <p>R 3</p>
+    <p>i-07a7a6794367ded49</p>
+    <p>t3.xlarge</p>
+    <p>r7i.large</p>
+    <p>t3.xlarge</p>
+    <p>-</p>
+    <p>i-0f6c16ceb8ea482c2</p>
+    <p>t3.2xlarge</p>
+    <p>r6i.xlarge</p>
+    <p>r7i.xlarge</p>
+    <p>t3.2xlarge</p>
+    <p>i-0f97772fef03977df</p>
+    <p>t3.xlarge</p>
+    <p>r6i.large</p>
+    <p>r7i.large</p>
+    <p>t3.xlarge</p>
+    <p>i-0fda6069f43c06df1</p>
+    <p>t3.xlarge</p>
+    <p>r7i.large</p>
+    <p>t3.xlarge</p>
+    <p>-</p>
+    <p>&nbsp;</p>
+    <p>Identify Unused Resources</p>
+    <p>Unused EC2 Resources:</p>
+    <p>Instance Name</p>
+    <p>Instance ID</p>
+    <p>Instance Type</p>
+    <p>Unused Days</p>
+    <p>marvel-GenAI-partha</p>
+    <p>i-0a1748bca3199a63f</p>
+    <p>t3.medium</p>
+    <p>274</p>
+    <p>marvel-LLM-test</p>
+    <p>i-0b43ba541b65fcd8f</p>
+    <p>t3.2xlarge</p>
+    <p>175</p>
+    <p>marvel-mddp-devsecops</p>
+    <p>i-0c73c29f8e5d01576</p>
+    <p>t3.xlarge</p>
+    <p>162</p>
+    <p>marvel-EEaaS-Kubernetes</p>
+    <p>i-0ced2e371b3425fe5</p>
+    <p>t3.large</p>
+    <p>142</p>
+    <p>marvel-TEaas-openstack-kolla</p>
+    <p>i-0842262e5bb3e2915</p>
+    <p>t3.xlarge</p>
+    <p>141</p>
+    <p>marvel-awx-ansible</p>
+    <p>i-0d5da5ba883efcf5b</p>
+    <p>t3.xlarge</p>
+    <p>127</p>
+    <p>marvel-Neureda-registry</p>
+    <p>i-0dc340b462af4ed74</p>
+    <p>t3.medium</p>
+    <p>125</p>
+    <p>marvel-windows-jumboxtest</p>
+    <p>i-07a7a6794367ded49</p>
+    <p>t3.medium</p>
+    <p>122</p>
+    <p>marvel-PlatformEng-Keycloak</p>
+    <p>i-0161cf03311390911</p>
+    <p>t3.medium</p>
+    <p>121</p>
+    <p>marvel-PE-mddp-k8s-1</p>
+    <p>i-0bfe201057f0db5f9</p>
+    <p>t3.2xlarge</p>
+    <p>121</p>
+    <p>marvel-Prometheus</p>
+    <p>i-00f4b18e0c7615802</p>
+    <p>t2.micro</p>
+    <p>120</p>
+    <p>marvel-slurm-testing-slurmctl</p>
+    <p>i-02028574274244586</p>
+    <p>t3a.small</p>
+    <p>120</p>
+    <p>marvel-slurm-testing-slurm-00</p>
+    <p>i-0c10cab3a673568a5</p>
+    <p>t3a.small</p>
+    <p>120</p>
+    <p>marvel-slurm-testing-gw</p>
+    <p>i-01528621d1601b22d</p>
+    <p>t3a.small</p>
+    <p>120</p>
+    <p>marvel-slurm-testing-slurmdb</p>
+    <p>i-04cf6faf1252ba6a7</p>
+    <p>t3a.small</p>
+    <p>120</p>
+    <p>mfdm_qual_dd_pg</p>
+    <p>i-03b6cc42f6ee8679a</p>
+    <p>t2.medium</p>
+    <p>116</p>
+    <p>tcsnxgnmfdmins5</p>
+    <p>i-054d01dc2082a9968</p>
+    <p>t3.large</p>
+    <p>114</p>
+    <p>tcsnxgnpemonobs01</p>
+    <p>i-0a30bd8f427568294</p>
+    <p>t2.large</p>
+    <p>114</p>
+    <p>tcsnxgnpemonobs02</p>
+    <p>i-0644a1225a61cfad0</p>
+    <p>t3.medium</p>
+    <p>114</p>
+    <p>tcsnxgnpemonobs03</p>
+    <p>i-0f4a538834c7f8379</p>
+    <p>t2.large</p>
+    <p>114</p>
+    <p>tcsnxgnmfdmins1</p>
+    <p>i-06f35320739d13110</p>
+    <p>t3.medium</p>
+    <p>113</p>
+    <p>tcsnxgnmfdmins3</p>
+    <p>i-0dd30488163388001</p>
+    <p>t3.medium</p>
+    <p>113</p>
+    <p>tcsnxgnmfdmins2</p>
+    <p>i-030fdebbe195c6d05</p>
+    <p>t3.medium</p>
+    <p>113</p>
+    <p>&nbsp;</p>
+    <p>Turn off workloads and node pools outside of business hours</p>
+    <p>Automate Shutdown/Startup</p>
+    <p>What It Is: Scripted automatic shutdown/startup of workloads outside business hours.</p>
+    <p>Sustainability Benefits:</p>
+    <p>Reduced energy consumption</p>
+    <p>Lower greenhouse gas emissions</p>
+    <p>Decreased e-waste from prolonged hardware lifespan</p>
+    <p>Identify Non-Essential Workloads</p>
+    <p>What It Is: Analyzing workloads to determine which can be safely turned off during non-business hours.</p>
+    <p>Sustainability Benefits:</p>
+    <p>Targeted energy reduction</p>
+    <p>Minimized unnecessary resource utilization</p>
+    <p>Enhanced overall efficiency</p>
+    <p>Autoscaling Configuration (Node Pools)</p>
+    <p>What It Is: Configuring node pools to autoscale down to 0 nodes during non-business hours.</p>
+    <p>Sustainability Benefits:</p>
+    <p>Dynamic energy consumption adjustment</p>
+    <p>Significant reduction in idle resource energy waste</p>
+    <p>Enhanced environmental responsiveness</p>
+    <p>Scheduled Node Pool Management</p>
+    <p>What It Is: Scheduling node pool shutdowns/startups using platform-specific features or tools.</p>
+    <p>Sustainability Benefits:</p>
+    <p>Predictable energy savings</p>
+    <p>Reduced operational carbon emissions</p>
+    <p>Improved resource utilization efficiency</p>
+    <p>Node Pool Sizing Optimization</p>
+    <p>What It Is: Regular review to optimize node pool sizing.</p>
+    <p>Sustainability Benefits:</p>
+    <p>Continuous energy efficiency improvement</p>
+    <p>Reduced e-waste through minimized node replacements</p>
+    <p>Lower environmental impact</p>
+    <p>&nbsp;</p>
+    <p>Show energy efficient resource provisioning options during provisioning</p>
+    <p>Please refer to this link for a guide on how to implement this.</p>
+    <p>&nbsp;</p>
+    <p>Implement pre-checks for common issues in CI/CD pipeline to avoid failures in different stages of pipeline</p>
+    <p>Please refer to this link for a guide on how to implement this.</p>
+    <p>&nbsp;</p>
+    <p>Details</p>
+    <p>Development (4/24)</p>
+    <p>Areas Implemented:</p>
+    <p>Energy metrics for application using Intel RAPL, Kepler, Schaphandre</p>
+    <p>Energy consumption of ML job, Model training</p>
+    <p>Optimize source code for energy and carbon emissions using static code analysis</p>
+    <p>Compare memory and energy utilization of docker and multi-stage docker files</p>
+    <p>&nbsp;</p>
+    <p>Areas to be Implemented:</p>
+    <p>Simplicity and Efficiency Trade-offs while developing algorithms</p>
+    <p>Efficient Software Algorithms and data structures</p>
+    <p>Efficient integration and delivery pipelines (Dev, Test, CI env)</p>
+    <p>On demand development environments</p>
+    <p>Minimizing unnecessary code execution</p>
+    <p>Utilizing lazy loading</p>
+    <p>Optimize energy consumption for Python and Java applications</p>
+    <p>Leverage LLMs to suggest energy efficient algorithms for Java / Python applications in IDE</p>
+    <p>Provide configurable deployment of applications with selected features to minimize resource utilization</p>
+    <p>Calculate energy utilization at function level</p>
+    <p>Optimize energy utilization of applications using AI/ML</p>
+    <p>Memory optimization for applications</p>
+    <p>Rightsizing containers and VM's based on resource utilization</p>
+    <p>Compare and suggest open-source tools which are energy efficient</p>
+    <p>Train models with custom rules for optimization of code</p>
+    <p>Suggest optimized version of built-in functions which are energy efficient in IDE / static analyzer</p>
+    <p>Code splitting - Convert code to smaller files which can be loaded on-demand</p>
+    <p>Tree shaking: This technique helps reduce the overall application size by removing unused code from the final
+      build,
+      thus optimizing the web product and minimizing resource consumption</p>
+    <p>Split large code repositories</p>
+    <p>Remove dead code and unused data from application</p>
+    <p>&nbsp;</p>
+    <p>Network (1/2)</p>
+    <p>Areas Implemented:</p>
+    <p>Compare energy efficiency for synchronous (REST vs gRPC) and Asynchronous (Kafka vs RabbitMQ) messaging between
+      microservices</p>
+    <p>&nbsp;</p>
+    <p>Areas to be Implemented:</p>
+    <p>Optimize data transfer (Implement local data processing, aggregation and compression techniques to avoid transfer
+      of
+      frequent, large amounts of data)</p>
+    <p>&nbsp;</p>
+    <p>Deployment (7/19)</p>
+    <p>Areas Implemented:</p>
+    <p>Tagging of resources to track usage</p>
+    <p>Calculate energy utilization for provisioned resources and show recommendations to deployment teams</p>
+    <p>Identify and share report on unused resources</p>
+    <p>Turn off workloads and node pools outside of business hours</p>
+    <p>Show energy efficient resource provisioning options during provisioning</p>
+    <p>Implement pre-checks for common issues in CI/CD pipeline to avoid failures in different stages of pipeline</p>
+    <p>Workload allocation on energy efficient servers, VMs</p>
+    <p>&nbsp;</p>
+    <p>Areas to be Implemented:</p>
+    <p>Deploy application in a region that is closest to users</p>
+    <p>Deploy in regions that are powered by renewables or energy efficient resources</p>
+    <p>Energy efficient workload scheduling</p>
+    <p>CPU frequency optimization for non-critical workloads</p>
+    <p>Alerts during resource provisioning (to avoid over provisioning) about energy consumption and energy efficient
+      options</p>
+    <p>Calculate and minimize energy utilization per transaction</p>
+    <p>Implement automated decision between horizontal vs vertical scaling of applications</p>
+    <p>Set up minimal artifacts - Reduce disk, memory and processing demands by considering the software for a given
+      purpose
+    </p>
+    <p>Schedule resource intensive tasks to execute when renewable energy source is available</p>
+    <p>Consolidate application workloads to maximize server utilization and move idle servers to low power mode</p>
+    <p>Measure (Idle/Normal/Peak) energy consumption of resources and identify scope for optimizations (Get power
+      consumption per CPU core information from processor type)</p>
+    <p>Identify unused resources in K8s using KOR tool</p>
+    <p>&nbsp;</p>
+    <p>Design (0/31)</p>
+    <p>Areas Implemented:</p>
+    <p>No Areas Implemented</p>
+    <p>&nbsp;</p>
+    <p>Areas to be Implemented:</p>
+    <p>Sustainability as NFR</p>
+    <p>Minimal Architecture (i.e. Developing minimal software for value)</p>
+    <p>Replace long-running service with a simple Function as a Service</p>
+    <p>Asynchronous processing and event-driven architectures</p>
+    <p>API Design: protocol (TCP, UDP, custom wire protocols)</p>
+    <p>API Design: data format used for request/response of your APIs: Protobuf/gRPC is better compared to JSON, XML</p>
+    <p>API Design: Avro schemas instead of JSON for data serialization</p>
+    <p>Reusable APIs vs P2P Integrations</p>
+    <p>Choice of programming language: Go, Rust over Python, Java; Java 17 is better with respect to memory optimization
+    </p>
+    <p>Public cloud, choice of provider, and region</p>
+    <p>Platform as a Service (PaaS) and Serverless (e.g., Function as a Service (FaaS))</p>
+    <p>Containers and Kubernetes - Adopting energy efficient architectures such as containers or serverless</p>
+    <p>Scheduling and batch vs. real-time - Demand Shaping</p>
+    <p>Carbon awareness into the Kubernetes Scheduler</p>
+    <p>Cost and Sustainability: Reducing operational costs and sustainability are aligned</p>
+    <p>Enforce Quotas and Rate Limiting</p>
+    <p>Reduce the Network Footprint</p>
+    <p>Identify energy utilization of applications across different design choices</p>
+    <p>Optimize data generation of applications</p>
+    <p>Create reusable modules to minimize development and maintenance efforts</p>
+    <p>Enable parallel processing using distributed computing and minimize energy consumption</p>
+    <p>Measure KPIs on the features used by customers and remove unused features</p>
+    <p>Energy saving mode for applications, system processes during periods of low load</p>
+    <p>Energy budgets for applications</p>
+    <p>Create Energy profile for application (Core Vs Non-core tasks - Logging, Monitoring, Audit, Redundancy etc...)
+    </p>
+    <p>Improve resilience of equipment to minimize redundancy (Ensure legacy hardware can support at least core features
+      of
+      software)</p>
+    <p>Shared libraries for applications</p>
+    <p>Server-side rendering (SSR): With SSR, a web page&rsquo;s HTML is generated on the server and sent to the client,
+      resulting in quicker initial load times and improved search engine optimization</p>
+    <p>React frameworks: Next.js as a framework has many built-in features for energy optimization</p>
+    <p>Progressive Web Applications (Hybrid of native and web apps) are more energy efficient</p>
+    <p>Optimize availability and scalability needs for application</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>Storage (0/5)</p>
+    <p>Areas Implemented:</p>
+    <p>No Areas Implemented</p>
+    <p>&nbsp;</p>
+    <p>Areas to be Implemented:</p>
+    <p>Dynamic provisioning of volumes for EC2 instance / Pod to automatically scale the storage size</p>
+    <p>Identify and remove unused data and resources in cloud</p>
+    <p>Implementing data retention, archival and deletion policies</p>
+    <p>Utilize caching to store frequently used data</p>
+    <p>Optimize log and metrics collection</p>
+    <p>&nbsp;</p>
+    <p>Quality (0/8)</p>
+    <p>Areas Implemented:</p>
+    <p>No Areas Implemented</p>
+    <p>&nbsp;</p>
+    <p>Areas to be Implemented:</p>
+    <p>Code and design review for sustainability</p>
+    <p>Document decisions using Key Design Decisions (KDDs) or Architectural Decision Records (ADRs)</p>
+    <p>Profiling tools and static analysis - Code profiling and optimization tools</p>
+    <p>Upgrade Runtimes and Modules</p>
+    <p>Change aware testing</p>
+    <p>Test Case Optimization</p>
+    <p>Risk Based Testing</p>
+    <p>On-demand and scalable Test Environments</p>
+    <p>&nbsp;</p>
+    <p>Operations (0/12)</p>
+    <p>Areas Implemented:</p>
+    <p>No Areas Implemented</p>
+    <p>&nbsp;</p>
+    <p>Areas to be Implemented:</p>
+    <p>Automated sustainability maturity assessment for applications</p>
+    <p>Observability and CarbonOps</p>
+    <p>Automation</p>
+    <p>Switching instances to chipsets that offer the same processing power at lower levels of energy consumption</p>
+    <p>Sustainable DevOps practices integrate sustainability into the software delivery process</p>
+    <p>Optimize resource allocation using ML</p>
+    <p>Maximize utilization of resources</p>
+    <p>Spot Instances</p>
+    <p>Setup sustainability goals for infrastructure, development and applications and monitor them using dashboards and
+      reports</p>
+    <p>Reduce the cooling requirements of servers by ensuring that applications (servers) run in optimal temperature
+      range
+    </p>
+    <p>Identify zombie workloads that consume resources (e.g., Application not running within container / VM)</p>
+    <p>Dashboard for resource utilization at cluster, node, and pod level and grouped by applications in Kubernetes</p>
+    <p>&nbsp;</p>
+  </div>
+</body>
+
+</html>
