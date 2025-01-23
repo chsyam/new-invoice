@@ -53,7 +53,7 @@ const generatePdf = async (req, res, next) => {
             console.log(error);
         });
     // const filepath = 'https://new-invoice-uwl9.onrender.com/docs/' + filename;
-    const filepath = 'http://localhost:3000/docs/' + filename;
+    const filepath = 'http://10.63.32.133:3000/docs/' + filename;
 
     res.render('download', {
         path: filepath

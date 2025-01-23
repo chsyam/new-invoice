@@ -1,10 +1,10 @@
 module.exports = {
     formate: 'A4',
     orientation: 'potrait',
-    border: '2mm',
+    border: '10mm',
     header: {
         height: '15mm',
-        contents: '<h4 style=" color: red;font-size:20;font-weight:800;text-align:center;">CUSTOMER INVOICE</h4>'
+        contents: '<h4 style="color: red;font-size:20;font-weight:800;text-align:center;">CUSTOMER INVOICE</h4>'
     },
     footer: {
         height: '20mm',
